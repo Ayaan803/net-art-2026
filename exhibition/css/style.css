@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0a0a0a;
+    color: #f2f2f2;
+    font-family: Georgia, serif;
+    line-height: 1.7;
+  }
+  
+  .hero {
+    height: 45vh;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)), url("../img/work2.gif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .curator {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+  }
+  
+  main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  
+  .statement {
+    background: #141414;
+    border: 1px solid #2b2b2b;
+    padding: 2rem; 
+    margin-bottom: 3rem;
+    border-radius: 12px;
+  }
+  
+  .statement h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  .statement p {
+    margin-bottom: 1rem;
+  }
+  
+  .artwork {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 1.5rem;
+    background: #141414;
+    border: 1px solid #2b2b2b;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .artwork img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .info {
+    padding: 1.5rem;
+  }
+  
+  .info h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .meta {
+    color: #bbbbbb;
+    margin-bottom: 1rem;
+  }
+  
+  .info p {
+    margin-bottom: 1rem;
+  }
+  
+  .info a {
+    color: #8dbfff;
+    text-decoration: none;
+  }
+  .info a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 800px) {
+    .artwork {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero-text h1 {
+      font-size: 2.2rem;
+    }
+  }
